@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "ebbf55ff-444d-4370-9b9b-6ca17d0bab2b",
+		"name": "Pesto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5469215"
+	},
+	"item": [
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/pesto/pesto/api/get_tasks/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pesto",
+						"pesto",
+						"api",
+						"get_tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "First",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "First Description",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "To Do",
+							"type": "text"
+						},
+						{
+							"key": "assigned_to",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/pesto/pesto/api/create_task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pesto",
+						"pesto",
+						"api",
+						"create_task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "First 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "First Description",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "To Do",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "assigned_to",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/pesto/pesto/api/update_task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pesto",
+						"pesto",
+						"api",
+						"update_task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/pesto/pesto/api/delete_task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pesto",
+						"pesto",
+						"api",
+						"delete_task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/pesto/pesto/api/get_users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pesto",
+						"pesto",
+						"api",
+						"get_users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
